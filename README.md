@@ -16,18 +16,39 @@ Limitations: The images should not be bigger than the filter.
   <i>Output example with opacity at 170</i>
 </p>
 
+# Install
+
+## Using conda (recommended)
+
+Install [miniconda](https://docs.conda.io/en/latest/miniconda.html), then run:
+
+`conda env create -f environment.yaml`
+
+## Using Python
+
+Install Python 3.8.5 and run:
+
+`pip install -r requirements.txt`
+
 # How to use
 
-- Install Python
-- Place the images to the `in` folder
-- Execute the script `run.ps1` or run `python ./pipe_filters.py in out 'filters/Ilford HP5.jpg' 170`
-- The images should appear in the `out` folder
+- Place the images in the `in` folder
+- Use either of the run methods and check the `out` folder afterwards:
+
+## Powershell script
+
+- Execute the script `run.ps1`
+
+## Python command
+
+- Activate the environment if using conda: `conda activate perfectgrain`
+- Execute the script: `python ./add_filter.py in out 'filters/Ilford HP5.jpg' 170`
 
 # Configuration
 
-Change the python command to pass different folders, filter or opacity.
+Change the python command to use different folders, filters or opacities.
 
-`python pipe_filters.py in out filter opacity`
+`python add_filter.py in out filter opacity`
 
 - in: input folder path
 - out: output folder path

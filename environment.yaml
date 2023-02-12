@@ -1,0 +1,11 @@
+name: perfectgrain
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.5
+  - pip=20.3
+  - pip:
+      - opencv-python==4.4.0.46
+      - Pillow==9.2.0
+      - blendmodes==2022

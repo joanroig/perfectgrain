@@ -16,7 +16,7 @@ Limitations: The images should not be bigger than the filter.
   <i>Output example with opacity at 170</i>
 </p>
 
-# Install
+# Install dependencies
 
 ## Using conda (recommended)
 
